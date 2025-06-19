@@ -1,0 +1,79 @@
+Drag to rearange the order of the questions
+SETUP PROJECT WITH TYPESCRIPT
+no usage of type all in typescript
+
+
+
+
+
+loadings
+
+the moment you are logged in, it records tha you have started the exam, if you leave thne page, it records your score as ZERO
+leaving or closing the page
+
+
+
+
+
+loading
+
+setTimeComponent = setting of values, number or e.target.value = string
+
+
+
+
+
+
+
+Live monitoring
+
+1. no of students
+2. connected
+3. completed
+4. time left to deactivating of exam
+
+
+
+
+Admin Pages
+    1. Login
+    Dashboard
+    3. All Exams
+    2. Create Exam
+    reports
+    settings
+    5. Exam Report for each exam
+
+student
+    all Exams
+    examination
+    exam reports
+
+
+
+
+problems
+1. useLogout
+2. Funtions
+
+
+192.168.0.1
+
+
+1027870340
+uba 
+living waters
+
+
+    8115234822
+    opay
+    bro precious
+
+
+
+9072216124
+
+
+
+type or interface for
+1, context - app.tsx

@@ -1,0 +1,379 @@
+.admin{
+    margin-top: 7vh;
+    padding: 20px 0% ;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    /* height: 93vh; */
+}
+.viewExams{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    position: relative;
+}
+a h4 span{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.adminSlide{
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.5s ease-in-out;
+    width: 200%;
+    transform: translateX(-50%)
+}
+.createExam{
+    display: flex;
+    row-gap: 20%;
+    column-gap: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;    
+}
+
+.createExam form{
+    display: flex;    
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 5px;
+    width: 35%;
+    box-shadow: 0px 0px 10px 0.1px rgb(0,0,0, 0.35);
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.h2s{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    top: 7vh;
+    position: fixed;
+    z-index: 11;
+    background-color: white;
+    padding: 5px;
+}
+.h2s h2{
+    cursor: pointer;
+}
+.inAactiveH2{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.viewExams .createExam label{
+    font-size: 11px;
+    font-weight: bold;
+}
+.viewExams input, .viewExams select{
+    box-shadow: inset 0px -2px 3px 0.25px rgba(0, 0, 0, 0.23);
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+::placeholder, select, option{
+    color: rgb(31, 28, 28);
+}
+select:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.434);
+}
+button.create{
+    margin-top: 20px;
+    height: 40px;
+    background-color: rgb(5, 5, 5);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button.create:hover{
+    transform: scale(0.97);
+}
+
+.examsParent{
+    width: 100%;
+}
+.exams{
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.exam{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 5px 5px 5px 0.1px rgba(0, 0, 0, 0.5);
+}
+
+.exam h4:hover{
+    border-bottom: 1px solid;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.exam a, .exam p{
+    text-decoration: none;
+    color: black;
+}
+.exam a{
+    font-size: 18px;
+}
+.exam p{
+    font-size: 13px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+.bottom > div{
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* border: 1px solid; */
+    justify-content: flex-end;
+}
+.bottom > div button{
+    width: 130px;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.bottom span{
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.middle{
+   justify-self: center;
+   width: 30%;
+}
+.middle p {
+    text-align: center;
+
+}
+.right{
+   justify-self: flex-end;
+}
+
+.right button.danger{
+    background-color: rgb(192, 7, 7);
+    color: white;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: bold;
+}
+.bottom button:hover {
+    transform: scale(0.95);
+}
+.left button.blue, .save{
+    background-color: rgba(10, 10, 105, 0.822);
+    color: white;
+    border: none;
+    padding: 7px ;
+}
+
+
+/* *************RESULT ********* */
+.resultsParent{
+    margin-top: 5px;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+.examList{
+    width: 100%;
+}
+.resultsParent table{
+    border-collapse: collapse;
+}
+.resultsParent .back{
+    position: relative;
+    left: 0;
+    font-size: 16px;
+    width: 30px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.resultHead{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+/* ******** SORT BY *****8 */
+
+
+.sortBy{
+    position: fixed;
+    top: 0%;
+    width: 10%;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+    z-index: 22;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.sortBy div{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    /* justify-content: center; */
+}
+.sortBy input{
+    width: 15px;
+    box-shadow: none;
+}
+
+
+@media (max-width: 1111px) {
+    .createExamParent .top{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+@media (max-width: 891px) {
+    .createExam {
+        column-gap: 20px;
+    }
+    .createExam form{
+        width: 50%;
+        box-shadow: 0px 0px 10px 0.1px rgb(0,0,0, 0.25);
+    }
+    
+    
+}
+@media (max-width: 700px) {
+    .createExam {
+        column-gap: 20px;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    .createExam form{
+        width: 50%;
+        box-shadow: 0px 0px 10px 0.1px rgb(0,0,0, 0.15);
+
+    }
+   
+    .examsParent{
+
+        overflow: auto;
+    }
+    .h2s{
+        column-gap: 10px;
+    }
+    .h2s h2{
+        font-size: 20px;
+    }
+    h2.inAactiveH2{
+        font-size: 14px;
+    }
+    .exams{
+        row-gap: 20px;
+        width: 650px;
+    }
+    .exam{
+        min-width: 450px;
+        box-shadow: 2.5px 2.5px 2.5px 0.1px rgba(0, 0, 0, 0.5);
+
+    }
+    .resultsParent{
+        overflow: auto;
+    }
+    .resultHead{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .resultHead h2{
+        font-size: 20px;
+    }
+    .resultHead p{
+        font-size: 14px;
+    }
+    table{
+        font-size: 14px;
+    }
+   .createExamParent .top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 20vh;
+    /* row-gap: -2px; */
+    /* background-color: red; */
+   }
+   .createExamParent .top div{
+    display: flex;
+    justify-content: space-between;
+   }
+   .createExamParent h2{
+    font-size: 18px;
+   }
+   .createExamParent .top p{
+    font-size: 13px;
+   }
+   .createExamParent .top button{
+    /* font-size: 14px; */
+    /* padding: 2px; */
+   }
+   .table{
+    margin: 14px 5% 100px 1%;
+}
+
+
+}
+@media (max-width: 570px) {
+    .createExam form{
+        width: 70%;
+    }
+
+
+}
+@media (max-width: 470px) {
+    .createExamParent .top{
+        height: 30vh;
+    }
+    .createExamParent .top div{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
+    }
+    .createExam form{
+        width: 90%;
+    }
+
+
+}
