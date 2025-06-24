@@ -182,10 +182,15 @@ export const CreateExam = () =>{
         if(editPart !== "" && faculty !== newExamInfo.faculty){
                 setNewExamInfo({
                     ...newExamInfo,
-                    department: ""
+                    department: "",
+                    level: ""
                 })
         }
     }, [newExamInfo.faculty])
+
+    useEffect(() => {
+        updateExamInfo()
+    }, [newExamInfo])
 
 
     const updateExamInfo:AsyncVoidFunction = async () => {
@@ -311,7 +316,12 @@ export const CreateExam = () =>{
                         }
                             >
                                 <EditPartDropDownComponent 
-                                    data={["100", "200", "300"]}
+                                    data={ newExamInfo.faculty == "All"? [] : 
+                                        availableDepartments?.find(fac => fac?.faculty === newExamInfo?.faculty)
+                                        ?.levels.map((level, i) => (
+                                            <option key={i} value={level}>{level}</option>
+                                        ))
+                                    }
                                     part="level"
                                     setNewExamInfo={setNewExamInfo} 
                                     newExamInfoEditPart ={newExamInfo.level}
@@ -429,7 +439,7 @@ export const CreateExam = () =>{
 
 
 interface EditPartDropDownComponentInterface {
-    data: string[],
+    data: any,
     part: string,
     setNewExamInfo: (newExamInfo: newExamInfoInterface) => void,
     setEditPart: (editPart: string) => void,

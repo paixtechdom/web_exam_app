@@ -40,7 +40,8 @@ export const ExamCard:FC<AvailableExamBlockInterface> = ({exam}) => {
     }, [])
 
     const deleteExam = async () =>{
-        await axios.delete(`${dbLocation}/exams.php/${exam.examKey}/delete`).then(function(){
+        await axios.delete(`${dbLocation}/exams.php?examKey=${exam.examKey}&action=delete`)
+        .then(function(){
             
             dispatch(setExams(exams.filter(e => e.examKey !== exam.examKey)))
             

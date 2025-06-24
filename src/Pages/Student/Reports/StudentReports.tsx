@@ -74,11 +74,13 @@ const UpdatePerformanceState = (type:PerformanceType) => {
     <main className='mt-[15vh] center'>
       <div className="w-11/12 flex flex-col gap-9">
         <h1 className={`${TopLevelHeader} `}>Exam Reports</h1>
-
+      {
+        (!isLoadingExams && results.length > 0 ) &&
         <PerformanceChart 
             results={results}
             performance={performance}
         />
+      }
 
         <StudentReportTable 
           data={results || []}

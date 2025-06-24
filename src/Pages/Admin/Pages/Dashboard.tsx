@@ -162,26 +162,26 @@ const BarChartDummyScores: DummyScoresInterface[] = [
         scoresList: [65, 55, 54, 69, 50, 68, 70, 70, 75, 57, 65],
         totalScore: 100
     },
-    {
-        examTitle: "CSC 105",
-        scoresList: [80, 75, 45, 69, 63, 58, 82, 67, 71, 63, 70],
-        totalScore: 100
-    },
-    {
-        examTitle: "GNS 113",
-        scoresList: [45, 56, 54, 49, 45, 68, 67, 52, 44, 37, 65],
-        totalScore: 100
-    },
+    // {
+    //     examTitle: "CSC 105",
+    //     scoresList: [80, 75, 45, 69, 63, 58, 82, 67, 71, 63, 70],
+    //     totalScore: 100
+    // },
+    // {
+    //     examTitle: "GNS 113",
+    //     scoresList: [45, 56, 54, 49, 45, 68, 67, 52, 44, 37, 65],
+    //     totalScore: 100
+    // },
     {
         examTitle: "GNS 201",
         scoresList: [65, 55, 54, 69, 50, 68, 70, 70, 75, 57, 65],
         totalScore: 100
     },
-    {
-        examTitle: "CSC 207",
-        scoresList: [80, 75, 85, 69, 63, 78, 82, 67, 71, 83, 70],
-        totalScore: 100
-    }
+    // {
+    //     examTitle: "CSC 207",
+    //     scoresList: [80, 75, 85, 69, 63, 78, 82, 67, 71, 83, 70],
+    //     totalScore: 100
+    // }
 ]
 
 export const BarChart = () => {

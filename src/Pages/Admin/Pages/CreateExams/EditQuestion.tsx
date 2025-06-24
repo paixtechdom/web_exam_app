@@ -155,7 +155,7 @@ export const EditQuestion = ({ editQuestionInfo, questionNo, noOfQuestions, Upda
     
 
     const deleteQuestion = async () => {       
-        await axios.delete(`${dbLocation}/examquestions.php/${editQuestionInfo.id}/delete`)
+        await axios.delete(`${dbLocation}/examquestions.php?id=${editQuestionInfo.id}&action=delete`)
         .then(() => {
             dispatch(setQuestions(questions.filter((e) => e.id != editQuestionInfo.id)))
 
@@ -178,10 +178,7 @@ export const EditQuestion = ({ editQuestionInfo, questionNo, noOfQuestions, Upda
 
         <section className={`flex w-11/12 mt-9 bg-gray-100 rounded-xl overflow-hidden shadow-xl h-fit `}>
 
-            <div className="center bg-gray-50 h- [100] w-6 cursor-grab hover:bg-gray-300 active:bg-gray-300 transition-all duration-500 ease-in-out">
-                <i className="bi bi-grid-fill"></i>
-            </div>
-
+        
             <div className="flex flex-col gap-4 w-full p-4 py-5 lg:p-9 lg:py-9">
 
                 <div className="flex flex-col w-full gap-5 lg:gap-9">

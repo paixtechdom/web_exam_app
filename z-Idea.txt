@@ -21,6 +21,12 @@ setTimeComponent = setting of values, number or e.target.value = string
 
 
 
+after hosting
+
+1. navbar after login does not show
+2. edit exam - the level option is different from add new exam
+3. cannot save question
+
 
 
 

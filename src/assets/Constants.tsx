@@ -1,5 +1,6 @@
-// const dbLocation = 'https://online-exam-app.000webhostapp.com/quiz_app'
-export const dbLocation = 'http://localhost:80/api-quiz-app'
+import { db } from "../../public/dbLocation"
+
+export const dbLocation = db
 
 export const PrimaryButtonCLass = "cursor-pointer bg-gray-900 transition-all duration-500 ease-in-out border border-gray-900 rounded-xl py-3 px-4 lg:px-6 text-sm lg:text-base text-gray-100 hover:bg-gray-700 hover:scale-90"
 
